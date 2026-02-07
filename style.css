@@ -1,1 +1,64 @@
 
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: white;
+  color: #111;
+}
+
+#app, #admin {
+  max-width: 420px;
+  margin: 60px auto;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+  text-align: center;
+}
+
+h2 { margin-bottom: 15px; }
+
+button {
+  width: 100%;
+  padding: 14px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover { opacity: .9; }
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin: 6px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.small { font-size: 13px; opacity: .7; }
+
+.bg-crypto span {
+  position: fixed;
+  font-size: 40px;
+  opacity: 0.06;
+  animation: float 12s infinite linear;
+}
+
+.bg-crypto span:nth-child(1){left:10%;animation-delay:0s;}
+.bg-crypto span:nth-child(2){left:30%;animation-delay:3s;}
+.bg-crypto span:nth-child(3){left:50%;animation-delay:6s;}
+.bg-crypto span:nth-child(4){left:70%;animation-delay:9s;}
+.bg-crypto span:nth-child(5){left:90%;animation-delay:12s;}
+
+@keyframes float {
+  from { top: 110%; }
+  to { top: -10%; }
+}
