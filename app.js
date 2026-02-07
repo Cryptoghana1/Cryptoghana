@@ -44,11 +44,12 @@ function buyForm() {
 function payment() {
   app.innerHTML = `
     <div class="card">
-      <h2>Payment Method</h2>
-      <button onclick="sendWhatsApp('MTN MoMo')">MTN MoMo</button>
-      <button onclick="sendWhatsApp('Vodafone Cash')">Vodafone Cash</button>
-      <button onclick="sendWhatsApp('Bank Transfer')">Bank Transfer</button>
-    </div>`;
+      <h2>Select Payment Method</h2>
+      <button onclick="showPaymentDetails('momo')">MTN MoMo</button>
+      <button onclick="showPaymentDetails('vodafone')">Vodafone Cash</button>
+      <button onclick="showPaymentDetails('bank')">Bank Transfer</button>
+    </div>
+  `;
 }
 
 function sellForm() {
