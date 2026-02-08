@@ -8,7 +8,6 @@ body {
   overflow-x: hidden;
 }
 
-
 #app, #admin {
   max-width: 420px;
   margin: 60px auto;
@@ -123,24 +122,21 @@ button:hover {
 
 /* ---------- COLORS ---------- */
 
-.btc { color: #f2a900; }     /* Gold */
-.eth { color: #000000; }     /* Black */
-.usdt { color: #26a17b; }    /* Green */
-.ltc { color: #345c9c; }     /* Blue */
-.text { color: #2563eb; }   /* Slogans */
+.btc { color: #f2a900; }
+.eth { color: #000000; }
+.usdt { color: #26a17b; }
+.ltc { color: #345c9c; }
+.text { color: #2563eb; }
 
 /* ---------- POSITIONS ---------- */
 
-/* Crypto logos */
 .bg-crypto span:nth-child(1){ left: 8%;  animation-delay: 0s; }
 .bg-crypto span:nth-child(2){ left: 28%; animation-delay: 5s; }
 .bg-crypto span:nth-child(3){ left: 48%; animation-delay: 10s; }
 .bg-crypto span:nth-child(4){ left: 68%; animation-delay: 15s; }
 
-/* Slogans (separated lanes) */
 .bg-crypto span:nth-child(5){ left: 15%; animation-delay: 7s; }
 .bg-crypto span:nth-child(6){ left: 55%; animation-delay: 13s; }
-
 
 /* ---------- ANIMATION ---------- */
 
