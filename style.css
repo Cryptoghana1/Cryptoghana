@@ -1,67 +1,63 @@
-/* ---------- FLOATING BACKGROUND ---------- */
-
-.bg-crypto {
-  position: fixed;
-  inset: 0;
-  z-index: 1;
-  pointer-events: none;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: white;
+  color: #111;
 }
+
+#app, #admin {
+  max-width: 420px;
+  margin: 60px auto;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+  text-align: center;
+}
+
+h2 { margin-bottom: 15px; }
+
+button {
+  width: 100%;
+  padding: 14px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover { opacity: .9; }
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin: 6px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.small { font-size: 13px; opacity: .7; }
 
 .bg-crypto span {
   position: fixed;
-  font-weight: 800;
-  white-space: nowrap;
-  animation: float 28s linear infinite;
+  font-size: 40px;
+  opacity: 0.06;
+  animation: float 12s infinite linear;
 }
 
-/* ---------- LOGOS ---------- */
-
-.bg-crypto span.btc,
-.bg-crypto span.eth,
-.bg-crypto span.usdt,
-.bg-crypto span.ltc {
-  font-size: 70px;
-  opacity: 0.55;
-  text-shadow: 0 6px 18px rgba(0,0,0,.2);
-}
-
-/* ---------- SLOGANS ---------- */
-
-.bg-crypto span.text {
-  font-size: 22px;
-  opacity: 0.5;
-  max-width: 360px;
-  text-align: center;
-  letter-spacing: 1px;
-  text-shadow: 0 4px 12px rgba(37,99,235,.25);
-}
-
-/* ---------- COLORS ---------- */
-
-.btc { color: #f2a900; }
-.eth { color: #000000; }
-.usdt { color: #26a17b; }
-.ltc { color: #345c9c; }
-.text { color: #2563eb; }
-
-/* ---------- LANES (ABSOLUTE CONTROL) ---------- */
-
-[data-lane="1"]  { left: 8%;  animation-delay: 0s; }
-[data-lane="2"]  { left: 28%; animation-delay: 5s; }
-[data-lane="3"]  { left: 48%; animation-delay: 10s; }
-[data-lane="4"]  { left: 68%; animation-delay: 15s; }
-
-[data-lane="5"]  { left: 18%; animation-delay: 3s; }
-[data-lane="6"]  { left: 38%; animation-delay: 8s; }
-[data-lane="7"]  { left: 58%; animation-delay: 13s; }
-[data-lane="8"]  { left: 78%; animation-delay: 18s; }
-
-[data-lane="9"]  { left: 25%; animation-delay: 11s; }
-[data-lane="10"] { left: 60%; animation-delay: 17s; }
-
-/* ---------- ANIMATION ---------- */
+.bg-crypto span:nth-child(1){left:10%;animation-delay:0s;}
+.bg-crypto span:nth-child(2){left:30%;animation-delay:3s;}
+.bg-crypto span:nth-child(3){left:50%;animation-delay:6s;}
+.bg-crypto span:nth-child(4){left:70%;animation-delay:9s;}
+.bg-crypto span:nth-child(5){left:90%;animation-delay:12s;}
 
 @keyframes float {
-  from { top: 120%; }
-  to   { top: -35%; }
+  from { top: 110%; }
+  to { top: -10%; }
 }
